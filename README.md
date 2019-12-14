@@ -1,41 +1,30 @@
-# The module [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/the-module/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/the-module)
+# MCSrv [![Travis CI Build Status](https://img.shields.io/travis/com/Richienb/mcsrv/master.svg?style=for-the-badge)](https://travis-ci.com/Richienb/mcsrv)
 
-My awesome module.
+An interface to the Minecraft Server Status API.
 
-[![NPM Badge](https://nodei.co/npm/the-module.png)](https://npmjs.com/package/the-module)
+[![NPM Badge](https://nodei.co/npm/mcsrv.png)](https://npmjs.com/package/mcsrv)
 
 ## Install
 
 ```sh
-npm install the-module
+npm install mcsrv
 ```
 
 ## Usage
 
 ```js
-const theModule = require("the-module");
+const mcsrv = require("mcsrv");
 
-theModule("unicorns");
-//=> 'unicorns & rainbows'
+mcsrv("mc.hypixel.net");
+//=> { online: true, ... }
 ```
 
 ## API
 
-### theModule(input, options?)
+### mcsrv(address)
 
-#### input
+#### address
 
 Type: `string`
 
-Lorem ipsum.
-
-#### options
-
-Type: `object`
-
-##### postfix
-
-Type: `string`\
-Default: `rainbows`
-
-Lorem ipsum.
+The server address to lookup.

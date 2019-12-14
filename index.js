@@ -1,7 +1,7 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-    if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+const ky = require("ky-universal").create({
+    prefixUrl: "https://api.mcsrvstat.us/2/",
+})
 
-    return `${input} & ${postfix}`
-}
+module.exports = (address) => ky(address).json()

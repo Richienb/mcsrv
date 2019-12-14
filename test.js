@@ -1,13 +1,7 @@
 import test from "ava"
-import theModule from "."
+import mcsrv from "."
 
-test("main", (t) => {
-    t.throws(() => {
-        theModule(123)
-    }, {
-        instanceOf: TypeError,
-        message: "Expected a string, got number",
-    })
-
-    t.is(theModule("unicorns"), "unicorns & rainbows")
+test("main", async (t) => {
+    const { online } = await mcsrv("mc.hypixel.net")
+    t.true(online)
 })
