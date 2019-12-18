@@ -1,6 +1,6 @@
 {
     "name": "mcsrv",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "An interface to the Minecraft Server Status API.",
     "repository": "https://github.com/Richienb/mcsrv.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
