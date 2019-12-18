@@ -66,6 +66,6 @@ declare namespace ServerStatus {
  * //=> { online: true, ... }
  * ```
 */
-declare function mcsrv(address: string): ServerStatus.Status;
+declare function mcsrv(address: string): Promise<ServerStatus.Status>;
 
 export = mcsrv;
