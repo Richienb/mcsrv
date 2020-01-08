@@ -15,8 +15,10 @@ npm install mcsrv
 ```js
 const mcsrv = require("mcsrv");
 
-mcsrv("mc.hypixel.net");
-//=> { online: true, ... }
+(() => {
+    await mcsrv("mc.hypixel.net");
+    //=> { online: true, ... }
+})()
 ```
 
 ## API
