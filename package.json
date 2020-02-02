@@ -27,7 +27,7 @@
         "ping"
     ],
     "dependencies": {
-        "ky": "^0.16.1",
+        "ky": "^0.17.0",
         "ky-universal": "^0.3.0"
     },
     "devDependencies": {
